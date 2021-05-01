@@ -53,6 +53,13 @@ h1{
   animation-fill-mode: backwards;
 }
 
+.content span:nth-child(6){
+  position: relative;
+  animation: animate 2s;
+  animation-delay: 1.25s;
+  animation-fill-mode: backwards;
+}
+
 @keyframes animate{
   0%{
     bottom: -100px;
