@@ -1,1 +1,18 @@
-
+.wrapper{
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  transform: translate (-50%, -50%);
+}
+h1{
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 3em;
+  margin: 25px 0;
+  letter-spacing: .2rem;
+  overflow: hidden;
+}
+  
+  
