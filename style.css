@@ -17,5 +17,48 @@ h1{
   letter-spacing: .2rem;
   overflow: hidden;
 }
+
+.content span:nth-child(1){
+  position: relative;
+  animation: animate 2s;
+  animation-fill-mode: backwards;
+}
+
+.content span:nth-child(2){
+  position: relative;
+  animation: animate 2s;
+  animation-delay: 0.25s;
+  animation-fill-mode: backwards;
+}
+
+.content span:nth-child(3){
+  position: relative;
+  animation: animate 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+.content span:nth-child(4){
+  position: relative;
+  animation: animate 2s;
+  animation-delay: 0.75s;
+  animation-fill-mode: backwards;
+}
+
+.content span:nth-child(5){
+  position: relative;
+  animation: animate 2s;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes animate{
+  0%{
+    bottom: -100px;
+  }
+  100%{
+    bottom: 0;
+  }
+}
   
   
