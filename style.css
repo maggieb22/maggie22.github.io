@@ -1,10 +1,7 @@
-body{
-  background-color: #adcbe3;
-}
 .wordCarousel {
     font-size: 36px;
     font-weight: 100;
-    color: #eee;
+    color: #fff;
     div {
         overflow: hidden;
         position: relative;
@@ -78,7 +75,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: darkorange; 
+    background: #adcbe3; 
     &::after {
         content:"";
         display: block;
