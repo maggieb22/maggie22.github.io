@@ -5,7 +5,7 @@ body{
 .wrapper{
   position: absolute;
   left: 5%;
-  top: 50%;
+  top: 40%;
   transform: translate (-50%, -50%);
 }
 h1{
@@ -14,7 +14,7 @@ h1{
   font-weight: bold;
   text-transform: capitalize;
   font-size: 5em;
-  margin: 15px 0;
+  margin: 10px 0;
   letter-spacing: .1rem;
   overflow: hidden;
 }
