@@ -13,9 +13,8 @@ h1{
   font-family: 'Courier New', monospace;
   font-weight: bold;
   text-transform: capitalize;
-  font-size: 7em;
-  margin: 10px 0;
-  letter-spacing: .1rem;
+  font-size: 5em;
+  margin: 100px 0;
   overflow: hidden;
 }
 
