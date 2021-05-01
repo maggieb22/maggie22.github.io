@@ -1,71 +1,94 @@
 body{
   background-color: #adcbe3;
 }
-
-.wrapper{
-  position: absolute;
-  left: 5%;
-  top: 40%;
-  transform: translate (-50%, -50%);
-}
-h1{
-  color: #fff;
-  font-family: 'Courier New', monospace;
-  font-weight: bold;
-  text-transform: capitalize;
-  font-size: 5em;
-  margin: 100px 0;
-  overflow: hidden;
-}
-
-.content span:nth-child(1){
-  position: relative;
-  animation: animate 2s;
-  animation-fill-mode: backwards;
-}
-
-.content span:nth-child(2){
-  position: relative;
-  animation: animate 2s;
-  animation-delay: 0.15s;
-  animation-fill-mode: backwards;
+.wordCarousel {
+    font-size: 36px;
+    font-weight: 100;
+    color: #eee;
+    div {
+        overflow: hidden;
+        position: relative;
+        float: right;
+        height: 65px;
+        padding-top: 10px;
+        margin-top: -10px;
+        li {
+            font-family: Serif;
+            color: #eee;
+            font-weight: 700;
+            padding: 0 10px;
+            height: 45px;
+            margin-bottom: 45px;
+            display: block;
+        }
+    }
 }
 
-.content span:nth-child(3){
-  position: relative;
-  animation: animate 2s;
-  animation-delay: 0.3s;
-  animation-fill-mode: backwards;
+.flip2 { animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip3 { animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip4 { animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+
+@keyframes flip2 {
+    0% { margin-top: -180px; }
+    5% { margin-top: -90px;  }
+    50% { margin-top: -90px; }
+    55% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
 }
 
-.content span:nth-child(4){
-  position: relative;
-  animation: animate 2s;
-  animation-delay: 0.45s;
-  animation-fill-mode: backwards;
+@keyframes flip3 {
+    0% { margin-top: -270px; }
+    5% { margin-top: -180px; }
+    33% { margin-top: -180px; }
+    38% { margin-top: -90px; }
+    66% { margin-top: -90px; }
+    71% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
 }
 
-.content span:nth-child(5){
-  position: relative;
-  animation: animate 2s;
-  animation-delay: 0.6s;
-  animation-fill-mode: backwards;
+@keyframes flip4 {
+    0% { margin-top: -360px; }
+    5% { margin-top: -270px; }
+    25% { margin-top: -270px; }
+    30% { margin-top: -180px; }
+    50% { margin-top: -180px; }
+    55% { margin-top: -90px; }
+    75% { margin-top: -90px; }
+    80% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
 }
 
-.content span:nth-child(6){
-  position: relative;
-  animation: animate 2s;
-  animation-delay: 0.75s;
-  animation-fill-mode: backwards;
+// Layout //////////////////////////////////////////
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Oswald);
+body,
+html {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-@keyframes animate{
-  0%{
-    bottom: -100px;
-  }
-  100%{
-    bottom: 0;
-  }
+body {
+    font-family: "Roboto Condensed", cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: darkorange; 
+    &::after {
+        content:"";
+        display: block;
+        width: 110%;
+        height: 125vh;
+        background: radial-gradient(#222, #000);
+        position: absolute;
+        z-index: -1;
+        transform: rotate(20deg);
+        border-radius: 50%;
+    }
 }
-  
-  
+
