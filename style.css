@@ -10,12 +10,12 @@ body{
 }
 h1{
   color: #fff;
-  font-family: sans-serif;
+  font-family: 'Courier New', monospace;
   font-weight: bold;
   text-transform: capitalize;
   font-size: 3em;
   margin: 25px 0;
-  letter-spacing: .2rem;
+  letter-spacing: .1rem;
   overflow: hidden;
 }
 
